@@ -691,7 +691,7 @@
         "text-font": ["Lateef Bold"],
         "text-transform": "uppercase",
         "text-letter-spacing": 0.18,
-        "text-size": ["interpolate", ["linear"], ["zoom"], 2, 17, 6, 25]
+        "text-size": ["interpolate", ["linear"], ["zoom"], 2, 16, 3, 17, 6, 25]
       },
       "paint": {
         "text-color": "hsl(0, 0%, 15%)",
