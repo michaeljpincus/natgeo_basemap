@@ -27,3 +27,35 @@ map.on('click', e => {
     .forEach(f => console.log(f.properties.class, f.properties['name:en'] || f.properties.name, map.getZoom().toFixed(1)));
 });
 
+map.on('load', () => {
+
+  map.addSource('glow-bands', {
+    type: 'geojson',
+    data: 'glow_bands.geojson'
+  });
+
+  map.addLayer({
+  id: 'country-glow',
+  type: 'fill',
+  source: 'glow-bands',
+  paint: {
+    'fill-color': [
+      'match',
+      ['to-number', ['get', 'color']],
+      1, '#e9b5a1',  
+      2, '#f2d59c',  
+      3, '#cddba5',  
+      4, '#a9d1c3',  
+      5, '#a9c9e2',  
+      6, '#c6bade',  
+      7, '#e7b9c9',  
+      8, '#dcc5a2',  
+      9, '#b8d4b1',  
+      '#cfd8dc'      
+    ],
+    'fill-opacity': ['get', 'opacity'],
+    'fill-antialias': false
+  }
+}, 'cities');
+
+});
