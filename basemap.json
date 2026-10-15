@@ -1,7 +1,7 @@
 {
   "version": 8,
   "projection": { "type": "globe" },
-  "glyphs": "https://github.io/michaeljpincus/natgeo_basemap/fonts/{fontstack}/{range}.pbf",
+  "glyphs": "https://michaeljpincus.github.io/natgeo_basemap//fonts/{fontstack}/{range}.pbf",
   "sprite": "https://michaeljpincus.github.io/basemap/sprites/sprite",
   "sources": {
     "terrain": {
