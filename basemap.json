@@ -1,7 +1,7 @@
 {
   "version": 8,
   "projection": { "type": "globe" },
-  "glyphs": "/fonts/{fontstack}/{range}.pbf",
+  "glyphs": "https://michaeljpincus.github.io/natgeo_basemap/fonts/{fontstack}/{range}.pbf",
   "sprite": "https://michaeljpincus.github.io/basemap/sprites/sprite",
   "sources": {
     "terrain": {
@@ -291,6 +291,7 @@
       "filter": [
         "all",
         ["!=", ["coalesce", ["get", "name:en"], ["get", "name"]], "Amazonas"],
+        ["!=", ["coalesce", ["get", "name:en"], ["get", "name"]], "Punjab"],
         ["in", ["get", "class"], ["literal", ["state", "territory", "region"]]],
         ["in",
           ["coalesce", ["get", "name:en"], ["get", "name"]],
