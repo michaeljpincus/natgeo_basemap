@@ -1,7 +1,7 @@
 {
   "version": 8,
   "projection": { "type": "globe" },
-  "glyphs": "https://michaeljpincus.github.io/natgeo_basemap/fonts/{fontstack}/{range}.pbf",
+  "glyphs": "https://github.com/michaeljpincus/natgeo_basemap/fonts/{fontstack}/{range}.pbf",
   "sprite": "https://michaeljpincus.github.io/basemap/sprites/sprite",
   "sources": {
     "terrain": {
@@ -316,7 +316,7 @@
 
             "Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar", "Chhattisgarh", "Goa", "Gujarat", "Haryana",
             "Himachal Pradesh", "Jharkhand", "Karnataka", "Kerala", "Madhya Pradesh", "Maharashtra", "Manipur",
-            "Meghalaya", "Mizoram", "Nagaland", "Odisha", "Orissa", "Punjab", "Rajasthan", "Sikkim", "Tamil Nadu",
+            "Meghalaya", "Mizoram", "Nagaland", "Odisha", "Orissa", "Rajasthan", "Sikkim", "Tamil Nadu",
             "Telangana", "Tripura", "Uttar Pradesh", "Uttarakhand", "West Bengal", "Delhi", "Jammu and Kashmir",
             "Ladakh", "Puducherry", "Chandigarh", "Andaman and Nicobar Islands", "Lakshadweep",
             "Dadra and Nagar Haveli and Daman and Diu",
@@ -462,7 +462,6 @@
             "Mizoram", "MZ",
             "Nagaland", "NL",
             ["Odisha", "Orissa"], "OD",
-            "Punjab", "PB",
             "Rajasthan", "RJ",
             "Sikkim", "SK",
             "Tamil Nadu", "TN",
