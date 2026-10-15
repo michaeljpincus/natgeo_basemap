@@ -1,7 +1,7 @@
 {
   "version": 8,
   "projection": { "type": "globe" },
-  "glyphs": "https://github.com/michaeljpincus/natgeo_basemap/fonts/{fontstack}/{range}.pbf",
+  "glyphs": "https://github.io/michaeljpincus/natgeo_basemap/fonts/{fontstack}/{range}.pbf",
   "sprite": "https://michaeljpincus.github.io/basemap/sprites/sprite",
   "sources": {
     "terrain": {
@@ -10,7 +10,7 @@
       "encoding": "terrarium",
       "tileSize": 256,
       "maxzoom": 15,
-      "attribution": "Terrain: Mapzen/AWS Terrain Tiles"
+      "attribution": "Basemap by Michael Pincus. Terrain: Mapzen/AWS Terrain Tiles"
     },
     "base": {
       "type": "vector",
