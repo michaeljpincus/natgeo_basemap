@@ -241,7 +241,7 @@
       "maxzoom": 8,
       "layout": {
         "text-field": ["coalesce", ["get", "name:en"], ["get", "name"]],
-        "text-font": ["Fraunces 72pt Bold Italic"],
+        "text-font": ["Libre Baskerville Bold Italic"],
         "text-transform": "uppercase",
         "text-letter-spacing": 0.3,
         "text-size": ["interpolate", ["linear"], ["zoom"], 1, 14, 3, 20, 6, 28],
@@ -264,7 +264,7 @@
       "maxzoom": 10,
       "layout": {
         "text-field": ["coalesce", ["get", "name:en"], ["get", "name"]],
-        "text-font": ["Fraunces 72pt Bold Italic"],
+        "text-font": ["Libre Baskerville Bold Italic"],
         "text-transform": "uppercase",
         "text-letter-spacing": 0.2,
         "text-size": ["interpolate", ["linear"], ["zoom"], 3, 12, 6, 17, 10, 22],
@@ -286,7 +286,7 @@
       "minzoom": 5,
       "layout": {
         "text-field": ["coalesce", ["get", "name:en"], ["get", "name"]],
-        "text-font": ["Fraunces 72pt Bold Italic"],
+        "text-font": ["Libre Baskerville Bold Italic"],
         "text-transform": "uppercase",
         "text-letter-spacing": 0.15,
         "text-size": ["interpolate", ["linear"], ["zoom"], 5, 10, 9, 13, 14, 17],
@@ -309,7 +309,7 @@
       "layout": {
         "symbol-placement": "line",
         "text-field": ["coalesce", ["get", "name:en"], ["get", "name"]],
-        "text-font": ["Fraunces 72pt Bold Italic"],
+        "text-font": ["Libre Baskerville Bold Italic"],
         "text-transform": "uppercase",
         "text-letter-spacing": 0.12,
         "text-size": ["interpolate", ["linear"], ["zoom"], 8, 10, 14, 14],
