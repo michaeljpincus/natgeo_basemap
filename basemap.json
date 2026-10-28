@@ -232,6 +232,96 @@
       }
     },
     {
+      "id": "ocean-labels",
+      "type": "symbol",
+      "source": "base",
+      "source-layer": "water_name",
+      "filter": ["==", ["get", "class"], "ocean"],
+      "minzoom": 0,
+      "maxzoom": 8,
+      "layout": {
+        "text-field": ["coalesce", ["get", "name:en"], ["get", "name"]],
+        "text-font": ["Fraunces 72pt Italic"],
+        "text-transform": "uppercase",
+        "text-letter-spacing": 0.3,
+        "text-size": ["interpolate", ["linear"], ["zoom"], 1, 14, 3, 20, 6, 28],
+        "text-max-width": 8,
+        "text-padding": 10
+      },
+      "paint": {
+        "text-color": "#4a90c2",
+        "text-halo-color": "hsla(204, 77%, 93%, 0.6)",
+        "text-halo-width": 1.2
+      }
+    },
+    {
+      "id": "sea-labels",
+      "type": "symbol",
+      "source": "base",
+      "source-layer": "water_name",
+      "filter": ["==", ["get", "class"], "sea"],
+      "minzoom": 3,
+      "maxzoom": 10,
+      "layout": {
+        "text-field": ["coalesce", ["get", "name:en"], ["get", "name"]],
+        "text-font": ["Fraunces 72pt Italic"],
+        "text-transform": "uppercase",
+        "text-letter-spacing": 0.2,
+        "text-size": ["interpolate", ["linear"], ["zoom"], 3, 12, 6, 17, 10, 22],
+        "text-max-width": 7,
+        "text-padding": 8
+      },
+      "paint": {
+        "text-color": "#4a90c2",
+        "text-halo-color": "hsla(204, 77%, 93%, 0.6)",
+        "text-halo-width": 1.2
+      }
+    },
+    {
+      "id": "lake-labels",
+      "type": "symbol",
+      "source": "base",
+      "source-layer": "water_name",
+      "filter": ["==", ["get", "class"], "lake"],
+      "minzoom": 5,
+      "layout": {
+        "text-field": ["coalesce", ["get", "name:en"], ["get", "name"]],
+        "text-font": ["Fraunces 72pt Italic"],
+        "text-transform": "uppercase",
+        "text-letter-spacing": 0.15,
+        "text-size": ["interpolate", ["linear"], ["zoom"], 5, 10, 9, 13, 14, 17],
+        "text-max-width": 6,
+        "symbol-sort-key": ["coalesce", ["get", "rank"], 99]
+      },
+      "paint": {
+        "text-color": "#5b9fcf",
+        "text-halo-color": "hsla(0, 0%, 100%, 0.6)",
+        "text-halo-width": 1.2
+      }
+    },
+    {
+      "id": "river-labels",
+      "type": "symbol",
+      "source": "base",
+      "source-layer": "waterway",
+      "filter": ["in", ["get", "class"], ["literal", ["river", "canal"]]],
+      "minzoom": 8,
+      "layout": {
+        "symbol-placement": "line",
+        "text-field": ["coalesce", ["get", "name:en"], ["get", "name"]],
+        "text-font": ["Fraunces 72pt Italic"],
+        "text-transform": "uppercase",
+        "text-letter-spacing": 0.12,
+        "text-size": ["interpolate", ["linear"], ["zoom"], 8, 10, 14, 14],
+        "text-max-angle": 30
+      },
+      "paint": {
+        "text-color": "#5b9fcf",
+        "text-halo-color": "hsla(0, 0%, 100%, 0.6)",
+        "text-halo-width": 1.2
+      }
+    },
+    {
       "id": "neighborhoods",
       "type": "symbol",
       "source": "base",
